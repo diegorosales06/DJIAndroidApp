@@ -5,6 +5,8 @@
 
 
     <string name="component_listview_geofencing">Geofencing</string>
+    <string name="waypoint_mission_title">Waypoint Mission</string>
+    <string name="virtualStickWaypint_mission_title">VS Waypoint Mission</string>
 
     <string name="sdk_version">DJI SDK Version: %1$s</string>
     <string name="hint_firmware_upgrade_in_LDM">Enable firmware upgrade under LDM mode</string>
