@@ -582,7 +582,6 @@ public class VirtualStickWaypointView extends LinearLayout implements Presentabl
     /**
      *
      * One iteration of the control loop.
-     *
      * This is the core of the waypoint navigation logic:
      *  1. Get the current target waypoint coordinates.
      *  2. Compute horizontal distance and bearing to it using Haversine.
