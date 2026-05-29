@@ -53,11 +53,16 @@ public class PayloadDropMissionView extends LinearLayout implements PresentableV
     private static final double ACCEPTANCE_RADIUS_M = 2.0;
     private static final double ALTITUDE_ACCEPTANCE_M = 0.5;
 
+    // Default drop target coordinates
+    private static final double DEFAULT_DROP_LAT = 34.0272525;
+    private static final double DEFAULT_DROP_LNG = -117.8511957;
+    private static final float DEFAULT_DROP_ALT = 8.0f;
+
     private boolean missionRunning = false;
-    private double dropTargetLat = 0.0;
-    private double dropTargetLng = 0.0;
-    private float dropTargetAlt = 8.0f;
-    private boolean dropTargetSet = false;
+    private double dropTargetLat = DEFAULT_DROP_LAT;
+    private double dropTargetLng = DEFAULT_DROP_LNG;
+    private float dropTargetAlt = DEFAULT_DROP_ALT;
+    private boolean dropTargetSet = true;
 
     private double currentLat = 0.0;
     private double currentLng = 0.0;
@@ -150,6 +155,11 @@ public class PayloadDropMissionView extends LinearLayout implements PresentableV
         LinearLayout.LayoutParams p3 = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 0.6f);
         etDropAlt.setLayoutParams(p3);
         dropInputRow.addView(etDropAlt);
+
+        // Auto-load default drop target into the UI
+        etDropLat.setText(String.valueOf(DEFAULT_DROP_LAT));
+        etDropLng.setText(String.valueOf(DEFAULT_DROP_LNG));
+        etDropAlt.setText(String.valueOf(DEFAULT_DROP_ALT));
 
         addView(dropInputRow);
 

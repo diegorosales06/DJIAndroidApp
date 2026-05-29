@@ -1,6 +1,7 @@
 <resources>
 
     <string name="payload_drop_mission_title">Drop Mission</string>
+    <string name="LED_Control_title">Auxiliary LED Control</string>
     <string name="sample_app_name">Mt. Sac Drone V1.12</string>
     <string name="action_settings">Settings</string>
 
